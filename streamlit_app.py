@@ -7,7 +7,7 @@ st.set_page_config(page_title="Tra cứu hóa đơn thanh toán", page_icon="�
 st.title("🧾 Tra cứu hoá đơn thanh toán")
 
 # Ô nhập mã hóa đơn
-ma_hd = st.text_input("Nhập mã hoá đơn:")
+ma_hd = st.text_input("Nhập mã tra cứu được in ở cuối hoá đơn:", placeholder:"Cú pháp : EPHDxxxxxxxx")
 
 # Dữ liệu hóa đơn mẫu
 hoa_don_data = {
@@ -17,8 +17,8 @@ hoa_don_data = {
         "Người lập": "VĨNH KHANG",
         "Khách hàng": "CLB SÁNG TÁC EPW",
         "Tên dịch vụ": "Đánh máy",
-        "Đơn giá": "5% G.B",
-        "Tổng": "5% G.B",
+        "Đơn giá": "5% Giá Bìa",
+        "Tổng": "5% Giá Bìa",
         "Hình thức thanh toán": "Thanh toán 5% giá bìa sau khi xuất bản",
         "Cam kết": "Sản phẩm đạt yêu cầu của khách hàng. Không đạt chất lượng, hoàn tiền toàn bộ hoá đơn."
     }
@@ -27,6 +27,7 @@ hoa_don_data = {
 # Kiểm tra mã hóa đơn
 if ma_hd:
     if ma_hd in hoa_don_data:
+        st.balloons()
         st.success("✅ Tìm thấy thông tin hoá đơn!")
         data = hoa_don_data[ma_hd]
         st.write(f"**Mã hoá đơn:** {data['Mã hoá đơn']}")
@@ -38,5 +39,7 @@ if ma_hd:
         st.write(f"**Tổng:** {data['Tổng']}")
         st.write(f"**Hình thức thanh toán:** {data['Hình thức thanh toán']}")
         st.markdown(f"**Cam kết:** {data['Cam kết']}")
+        st.success("✅ Đây là hoá đơn thật,được chúng tôi xác nhận!")
     else:
-        st.error("❌ Không có thông tin cho mã hoá đơn này.")
+        st.error("❌ Không có thông tin cho mã hoá đơn này.Có thể đây là hoá đơn giả!!")
+        st.snow()
