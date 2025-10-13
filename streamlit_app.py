@@ -44,12 +44,4 @@ if ma_hd:
         st.error("❌ Không có thông tin cho mã hoá đơn này.Có thể đây là hoá đơn giả!!")
         st.snow()
 
-st.markdown(
-    """
-    <hr style="border: 2px solid #ccc;">
-    <div style="text-align: center; color: gray; font-size: 15px; margin-top: 20px;">
-        © 2025 CLB Sáng Tác EPW | Liên hệ chúng tôi nếu có sự cố: <a href="mailto:khangnv33@emasiplus.edu.vn">khangnv33@emasiplus.edu.vn</a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("©CLB Sáng Tác EPW | Liên hệ chúng tôi nếu có sự cố: [khangnv33@emasiplus.edu.vn](mailto:khangnv33@emasiplus.edu.vn)"
