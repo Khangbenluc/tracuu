@@ -7,7 +7,7 @@ st.set_page_config(page_title="Tra cứu hóa đơn thanh toán", page_icon="�
 st.title("🧾 Tra cứu hoá đơn thanh toán")
 
 # Ô nhập mã hóa đơn
-ma_hd = st.text_input("Nhập mã tra cứu được in ở cuối hoá đơn:", placeholder:"Cú pháp : EPHDxxxxxxxx")
+ma_hd = st.text_input("Nhập mã tra cứu được in ở cuối hoá đơn:", placeholder="Cú pháp : EPHDxxxxxxxx")
 
 # Dữ liệu hóa đơn mẫu
 hoa_don_data = {
