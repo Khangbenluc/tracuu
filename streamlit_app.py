@@ -55,7 +55,7 @@ if ma_hd:
         st.markdown(f"**Cam kết:** {data['Cam kết']}")
         st.success("✅ Đây là hoá đơn thật, được chúng tôi xác nhận!")
     else:
-        st.error("❌ Không có thông tin cho mã hoá đơn này. Có thể đây là hoá đơn giả!")
+        st.error("❌ Không có thông tin cho mã hoá đơn này. Có thể đây là hoá đơn giả hoặc thông tin chưa được cập nhật. Hãy thử lại sau!")
         st.snow()
 
 # Footer
