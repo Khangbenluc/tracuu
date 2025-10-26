@@ -13,6 +13,7 @@ ma_hd = st.text_input("Nhập mã tra cứu được in ở cuối hoá đơn:",
 hoa_don_data = {
     "EPHD3124324N": {
         "Mã hoá đơn": "2C45EA",
+        "Loại hoá đơn": "Hoá đơn thanh toán"
         "Ngày xuất": "12/10/2025",
         "Người lập": "VĨNH KHANG",
         "Khách hàng": "CLB SÁNG TÁC EPW",
@@ -22,6 +23,18 @@ hoa_don_data = {
         "Hình thức thanh toán": "Thanh toán 5% giá bìa sau khi xuất bản",
         "Cam kết": "Sản phẩm đạt yêu cầu của khách hàng. Không đạt chất lượng, hoàn tiền toàn bộ hoá đơn."
     }
+    "EPHD7691543W": { 
+    "Mã hoá đơn": "34L5HR", 
+    "Loại hoá đơn": "Hoá đơn điều chỉnh"
+    "Ngày xuất": "27/10/2025", 
+    "Người lập": "VĨNH KHANG", 
+    "Khách hàng": "CLB SÁNG TÁC EPW", 
+    "Tên dịch vụ": "Đánh máy", 
+    "Đơn giá": "0% Giá Bìa", 
+    "Tổng": "0% Giá Bìa", 
+    "Hình thức thanh toán": "Thanh toán 0% giá bìa sau khi xuất bản", 
+    "Cam kết": "Sản phẩm đạt yêu cầu của khách hàng. Không đạt chất lượng, hoàn tiền toàn bộ hoá đơn."
+        }
 }
 
 # Kiểm tra mã hóa đơn
