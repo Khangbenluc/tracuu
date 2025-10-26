@@ -99,7 +99,7 @@ if ma_hd:
 # --- Footer ---
 st.markdown("""
 <div class="footer">
-© 2025 CLB Sáng Tác EPW | Liên hệ khi có sự cố: 
+© 2025 CLB Sáng Tác EPW | Dữ liệu được cập nhật mỗi 24h | Liên hệ khi có sự cố: 
 <a href="mailto:khangnv33@emasiplus.edu.vn">khangnv33@emasiplus.edu.vn</a>
 </div>
 """, unsafe_allow_html=True)
