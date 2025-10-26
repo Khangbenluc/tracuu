@@ -93,7 +93,7 @@ if ma_hd:
         st.markdown("</div>", unsafe_allow_html=True)
         st.success("✅ Đây là hoá đơn thật, được chúng tôi xác nhận!")
     else:
-        st.error("❌ Không có thông tin cho mã hoá đơn này. Có thể đây là hoá đơn giả!")
+        st.error("❌ Không có thông tin cho mã hoá đơn này. Có thể đây là hoá đơn giả hoặc thông tin chưa cập nhật. Vui lòng thử lại sau!")
         st.snow()
 
 # --- Footer ---
