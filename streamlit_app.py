@@ -85,7 +85,7 @@ if ma_hd:
 
         # --- Hiển thị trong thẻ đẹp ---
         st.markdown("<div class='invoice-card'>", unsafe_allow_html=True)
-        st.markdown("<div class='invoice-title'>HOÁ ĐƠN THANH TOÁN</div>", unsafe_allow_html=True)
+        st.markdown("<div class='invoice-title'>THÔNG TIN HOÁ ĐƠN</div>", unsafe_allow_html=True)
 
         for key, value in data.items():
             st.markdown(f"<div class='invoice-field'><b>{key}:</b> <span class='invoice-highlight'>{value}</span></div>", unsafe_allow_html=True)
